@@ -1,0 +1,221 @@
+Termux Commands List
+
+Here is the descriptive list of  Basic Termux commands and their uses:
+
+1.1 Search for package:
+pkg search command is used to search for a particular package. You can use the pkg search command to search for Termux packages
+
+pkg search package name
+
+For example:
+
+pkg search metasploit
+
+1.2 Install package
+The pkg install command installs Termux packages that are not currently installed and updates packages that are already installed.
+
+pkg install package name
+
+For example:
+
+pkg install metasploit
+
+By using the above command, Metasploit will be installed. If you want to install another package, then remove the Metasploit and then type the name of your own package.
+
+1.3 Uninstall package
+Uninstall package command is used to uninstall a package or a tool. You can easily uninstall any package from your Termux by this command.
+
+pkg uninstall package name
+
+Example:
+
+pkg uninstall metasploit
+
+By typing the above command, Metasploit will be uninstalled.
+
+1.4 Reinstall a package in Termux
+If you want to reinstall the Termux packages to the same versions as were previously installed, then you can use this command. The pkg reinstall command will first uninstall and then install the package back again to your Termux
+
+pkg reinstall package name
+
+For Example:
+
+pkg reinstall metasploit
+
+1.5 Get detailed info about package
+pkg show command generally used to show detailed information about a particular package. Use this command to get detailed information about the package.
+
+pkg show package name
+
+For Example:
+
+pkg show package name
+
+1.6 List installed Termux packages
+Use this command to get the list of all packages that are currently installed in your Termux.
+
+pkg-list-installed
+
+1.7 List all Termux packages
+pkg list-all command is used to get a list of all available packages for the Termux. Use this command to see the list of all available packages.
+
+pkg list-all
+
+1.8 Show the location of files
+pkg files used to show the location of installed files and packages in the Termux. The command with example is shown below:
+
+pkg files package name
+
+For Example:
+
+pkg files metasploit
+
+1.9 Update and Upgrade Termux packages
+pkg update && pkg upgrade -y is the mixture of two commands separated by &&. You can use multiple commands in Termux by adding && to the Termux.
+
+First, the pkg update command will get executed, and then the pkg upgrade command will get executed. -y is used to prompt yes.
+
+In simple words, this Termux command will update and upgrade your Termux packages.
+
+pkg update && pkg upgrade -y 
+
+1.10 Clear Termux screen
+Use this command to clear the Termux screen
+
+clear
+
+1.11 Print current working directory
+Use this Termux command to print the working directory, That means the command will give you a location of the current directory in which you are present.
+
+pwd
+
+1.12 Change directory
+You can use this command to change the directory. You can easily move from one directory to another by using this command. The example is given below.
+
+cd $HOME
+
+cd /sdcard
+
+The first command will take you to the Termux home directory, while another command will take you to the sd card of your Android device.
+
+Going back from the directory:
+
+cd ..
+
+cd ../../
+
+1.13 See files and folder of the current directory
+Use this Termux command to see the files and folders that are present in the current directory.
+
+ls
+
+You can also use this command to see more information about the files and folders including hidden files.
+
+ls -lha
+
+1.14 Copy files - cp
+cp is used to copy the file from one directory to another. For example, I have a file that is present on the sd card, and the name of the file is "document".  And I want to move that document to the Termux home directory, then the following command will be used:
+
+cp /sdcard/document $HOME
+
+1.15 Move files - mv
+mv command is used to copy files from one folder to another. The procedure is the same as the above command just use mv instead of cp if you want to move the file.
+
+1.16 Delete files and folder
+rm is used to delete files in the directory or a folder. rm -rf used to delete the folder and its content. For example, I want to delete a folder named "Document", then I will use the following command to delete that folder.
+
+rm -rf Document
+
+1.17 Change permission of file and folder
+chmod command is used to change the permission of the file and folder. Sometimes some files have only permission to read. To change the permission of a file from reading to read write and execute, we will use the following command:
+
+chmod +x FILE NAME HERE
+
+Or
+
+chmod +x FILE NAME HERE
+
+1.18 Read or create a file
+To read any text, HTML, python file, etc cat command is used. For example, I want to read the content of "document.txt", Then I will use the following command:
+
+cat document.txt
+
+Please note that if the file is not present at the given destination. Then the document.txt file will be created.
+
+1.19 Zip command
+zip is the popular command of the Termux. Zip command is used to compress and decompress a particular file or folder.
+
+To compress a file, the following command will be used:
+
+zip FILE NAME HERE
+
+To decompress a file, the following command will be used:
+
+unzip FILE NAME HERE
+
+Note: To use the zip and unzip command, you will need to install zip by typing the following Termux command.
+
+pkg install zip
+
+1.20 Create and remove the directory
+mkdir command is used to make directories, while rmdir Termux command is used to remove directories.
+
+For example, I want to create a directory/folder named Termux, then I will use the following command:
+
+mkdir Termux
+
+To remove the Termux directory, the following command will be used:
+
+mkdir Termux
+
+1.21 df command
+Shows the size of the object in the specified folder.
+df Termux
+
+1.22 Exit The Termux
+Use this command to close the Termux.
+
+exit
+
+1.23 Open a file
+Open the file with the default application associated with it. For example, I want to open the "readme.txt" file. Then I will use the following Termux command:
+
+open readme.txt
+
+1.24 ping command
+The command is used to ping an IP address or a website to ensure the reachability of a device to a specific web or IP address. Example:
+
+open google.com
+
+1.25 Show calender
+Use this command to show the calendar.
+
+cal
+
+1.26 Show date
+Use this command to print the date.
+
+date
+
+1.27 History of command
+Use this Termux command to see the history of the Termux commands that you had typed before.
+
+history
+
+1.28 Download file from Termux
+The wget Termux command will let you download any file and Termux package from the URL. Usage of this command is mentioned below:
+
+wget URL HERE
+
+Wget package needs to be installed to use this command. You can install the wget by using the below command:
+
+pkg install wget
+
+1.29 Git clone command
+To clone the packages from Github, you will need a git clone command. Usage of this command is mentioned below:
+
+git clone URL OF GITHUB HERE
+
+To use the git clone, the git command must be installed in the Termux. You can install git by typing the below command.
+
+pkg install git
